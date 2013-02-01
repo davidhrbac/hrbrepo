@@ -32,20 +32,37 @@
 
 <p>Hrb repositories are repositories built and managed by me and for my own purposes. I use them to distribute packages not availabe in CentOS or RepoForge. Packages are provided "as is" with no express or implied warranty for accuracy or accessibility.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-<a href="mirrors-hrb">mirrors-hrb</a>
-<a href="mirrors-hrb-as">mirrors-hrb-as</a>
-<a href="mirrors-hrb-fw">mirrors-hrb-fw</a>
-<a href="mirrors-hrb-kernel">mirrors-hrb-kernel</a>
-<a href="mirrors-hrb-tls">mirrors-hrb-tls</a>
-<a href="mirrors-testing-hrb">mirrors-testing-hrb</a>
-<a href="mirrors-testing-hrb-as">mirrors-testing-hrb-as</a>
-<a href="mirrors-testing-hrb-fw">mirrors-testing-hrb-fw</a>
-<a href="mirrors-testing-hrb-kernel">mirrors-testing-hrb-kernel</a>
-<a href="mirrors-testing-hrb-tls">mirrors-testing-hrb-tls</a>
-<a href="RPM-GPG-KEY-hrb.txt">RPM-GPG-KEY-hrb.txt</a>
+<p>Every repository has an installer package: <strong>hrb-{fw,kernel,ssh,tls}-release.version.rpm</strong> and testing section. Debuginfo packages are available too.</p>
+<p>General repository &#8211; <strong><em>hrb</em></strong><br />
+el4 &#8211; <a href="http://fs11.vsb.cz/hrb33/el4/hrb/stable/i386/repoview/" target="_blank">[i386]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb/stable/x86_64/repoview/" target="_blank">[x86_64]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb/stable/SRPMS/repoview/" target="_blank">[SRPMS]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb/stable/debug-i386/repoview/" target="_blank">[debug-i386]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb/stable/debug-x86_64/repoview/" target="_blank">[debug-x86_64]</a><br />
+el5 &#8211; <a href="http://fs11.vsb.cz/hrb33/el5/hrb/stable/i386/repoview/" target="_blank">[i386]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb/stable/x86_64/repoview/" target="_blank">[x86_64]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb/stable/SRPMS/repoview/" target="_blank">[SRPMS]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb/stable/debug-i386/repoview/" target="_blank">[debug-i386]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb/stable/debug-x86_64/repoview/" target="_blank">[debug-x86_64]</a><br />
+el6 &#8211; <a href="http://fs11.vsb.cz/hrb33/el6/hrb/stable/i386/repoview/" target="_blank">[i386]</a> <a href="http://fs11.vsb.cz/hrb33/el6/hrb/stable/x86_64/repoview/" target="_blank">[x86_64]</a> <a href="http://fs11.vsb.cz/hrb33/el6/hrb/stable/SRPMS/repoview/" target="_blank">[SRPMS]</a> <a href="http://fs11.vsb.cz/hrb33/el6/hrb/stable/debug-i386/repoview/" target="_blank">[debug-i386]</a> <a href="http://fs11.vsb.cz/hrb33/el6/hrb/stable/debug-x86_64/repoview/" target="_blank">[debug-x86_64]</a></p>
+<p>mod_gnutls repo &#8211; <strong><em>hrb-tls</em></strong><br />
+el4 &#8211; <a href="http://fs11.vsb.cz/hrb33/el4/hrb-tls/stable/i386/repoview/" target="_blank">[i386]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb-tls/stable/x86_64/repoview/" target="_blank">[x86_64]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb-tls/stable/SRPMS/repoview/" target="_blank">[SRPMS]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb-tls/stable/debug-i386/repoview/" target="_blank">[debug-i386]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb-tls/stable/debug-x86_64/repoview/" target="_blank">[debug-x86_64]</a><br />
+el5 &#8211; <a href="http://fs11.vsb.cz/hrb33/el5/hrb-tls/stable/i386/repoview/" target="_blank">[i386]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb-tls/stable/x86_64/repoview/" target="_blank">[x86_64]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb-tls/stable/SRPMS/repoview/" target="_blank">[SRPMS]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb-tls/stable/debug-i386/repoview/" target="_blank">[debug-i386]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb-tls/stable/debug-x86_64/repoview/" target="_blank">[debug-x86_64]</a><br />
+el6 &#8211; <a href="http://fs11.vsb.cz/hrb33/el6/hrb-tls/stable/i386/repoview/" target="_blank">[i386]</a> <a href="http://fs11.vsb.cz/hrb33/el6/hrb-tls/stable/x86_64/repoview/" target="_blank">[x86_64]</a> <a href="http://fs11.vsb.cz/hrb33/el6/hrb-tls/stable/SRPMS/repoview/" target="_blank">[SRPMS]</a> <a href="http://fs11.vsb.cz/hrb33/el6/hrb-tls/stable/debug-i386/repoview/" target="_blank">[debug-i386]</a> <a href="http://fs11.vsb.cz/hrb33/el6/hrb-tls/stable/debug-x86_64/repoview/" target="_blank">[debug-x86_64]</a></p>
+<p>Firewall related &#8211; <strong><em>hrb-fw</em></strong><br />
+el4 &#8211; <a href="http://fs11.vsb.cz/hrb33/el4/hrb-fw/stable/i386/repoview/" target="_blank">[i386]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb-fw/stable/x86_64/repoview/" target="_blank">[x86_64]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb-fw/stable/SRPMS/repoview/" target="_blank">[SRPMS]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb-fw/stable/debug-i386/repoview/" target="_blank">[debug-i386]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb-fw/stable/debug-x86_64/repoview/" target="_blank">[debug-x86_64]</a><br />
+el5 &#8211; <a href="http://fs11.vsb.cz/hrb33/el5/hrb-fw/stable/i386/repoview/" target="_blank">[i386]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb-fw/stable/x86_64/repoview/" target="_blank">[x86_64]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb-fw/stable/SRPMS/repoview/" target="_blank">[SRPMS]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb-fw/stable/debug-i386/repoview/" target="_blank">[debug-i386]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb-fw/stable/debug-x86_64/repoview/" target="_blank">[debug-x86_64]</a></p>
+<p>Development kernels &#8211; <strong><em>hrb-kernel</em></strong><br />
+el4 &#8211; <a href="http://fs11.vsb.cz/hrb33/el4/hrb-kernel/stable/i386/repoview/" target="_blank">[i386]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb-kernel/stable/x86_64/repoview/" target="_blank">[x86_64]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb-kernel/stable/SRPMS/repoview/" target="_blank">[SRPMS]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb-kernel/stable/debug-i386/repoview/" target="_blank">[debug-i386]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb-kernel/stable/debug-x86_64/repoview/" target="_blank">[debug-x86_64]</a><br />
+el5 &#8211; <a href="http://fs11.vsb.cz/hrb33/el5/hrb-kernel/stable/i386/repoview/" target="_blank">[i386]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb-kernel/stable/x86_64/repoview/" target="_blank">[x86_64]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb-kernel/stable/SRPMS/repoview/" target="_blank">[SRPMS]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb-kernel/stable/debug-i386/repoview/" target="_blank">[debug-i386]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb-kernel/stable/debug-x86_64/repoview/" target="_blank">[debug-x86_64]</a></p>
+<p>Openssh 5.x &#8211; <strong><em>hrb-ssh</em></strong><br />
+el4 &#8211; <a href="http://fs11.vsb.cz/hrb33/el4/hrb-ssh/stable/i386/repoview/" target="_blank">[i386]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb-ssh/stable/x86_64/repoview/" target="_blank">[x86_64]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb-ssh/stable/SRPMS/repoview/" target="_blank">[SRPMS]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb-ssh/stable/debug-i386/repoview/" target="_blank">[debug-i386]</a> <a href="http://fs11.vsb.cz/hrb33/el4/hrb-ssh/stable/debug-x86_64/repoview/" target="_blank">[debug-x86_64]</a><br />
+el5 &#8211; <a href="http://fs11.vsb.cz/hrb33/el5/hrb-ssh/stable/i386/repoview/" target="_blank">[i386]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb-ssh/stable/x86_64/repoview/" target="_blank">[x86_64]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb-ssh/stable/SRPMS/repoview/" target="_blank">[SRPMS]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb-ssh/stable/debug-i386/repoview/" target="_blank">[debug-i386]</a> <a href="http://fs11.vsb.cz/hrb33/el5/hrb-ssh/stable/debug-x86_64/repoview/" target="_blank">[debug-x86_64]</a></p>
+
+<pre><code>
+<a href="mirrors/mirrors-hrb">mirrors/mirrors-hrb</a>
+<a href="mirrors/mirrors-hrb-as">mirrors/mirrors-hrb-as</a>
+<a href="mirrors/mirrors-hrb-fw">mirrors/mirrors-hrb-fw</a>
+<a href="mirrors/mirrors-hrb-kernel">mirrors/mirrors-hrb-kernel</a>
+<a href="mirrors/mirrors-hrb-tls">mirrors/mirrors-hrb-tls</a>
+<a href="mirrors/mirrors-testing-hrb">mirrors/mirrors-testing-hrb</a>
+<a href="mirrors/mirrors-testing-hrb-as">mirrors/mirrors-testing-hrb-as</a>
+<a href="mirrors/mirrors-testing-hrb-fw">mirrors/mirrors-testing-hrb-fw</a>
+<a href="mirrors/mirrors-testing-hrb-kernel">mirrors/mirrors-testing-hrb-kernel</a>
+<a href="mirrors/mirrors-testing-hrb-tls">mirrors/mirrors-testing-hrb-tls</a>
+<a href="mirrors/RPM-GPG-KEY-hrb.txt">mirrors/RPM-GPG-KEY-hrb.txt</a>
 </code></pre>
 
 <p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
